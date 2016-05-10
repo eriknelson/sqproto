@@ -1,22 +1,32 @@
+* { box-sizing: border-box }
+
+button#load-data {
+  display: block;
+  width: 100px;
+  margin: 20px auto 0 auto;
+}
+
 #report-widget-mount {
   width: 800px;
   height: 600px;
-  margin: 30px auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 
-/* DEBUG STYLES */
-.dblack {
-  border: 1px solid black;
+.header.row .col {
+  width: 60%
 }
 
-.db{
+.row {
   border: 1px solid blue;
 }
 
-.dr {
+.col {
   border: 1px solid red;
 }
 
-.dg {
-  border: 1px solid green;
+/*************************************************************/
+/* Debug */
+/*************************************************************/
+.dblack {
+  border: 1px solid black;
 }

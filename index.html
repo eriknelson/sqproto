@@ -10,15 +10,59 @@
 
 </head>
 <body>
+  <button id="load-data">Load Data (1s)</button>
   <div id="report-widget-mount" class="dblack"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="vendor/doT.js" type="text/javascript"></script>
 
 
+<div class="report-widget">
+
 <script id="report-widget-templ" type="text/x-dot-template">
-  <div class="report-widget">
-    <div>{{=it.name}}</div>
+  <div class="header row">
+    <div class="col">
+      <h3>Blah blah Report</h3>
+      <h4>Last analyzed: 2 minutes ago</h4>
+    </div>
+  </div>
+
+  <div class="pop-header row"><h3>Popularity</h3></div>
+  <div class="pop">
+    <div class="row">
+      <div class="col" style="width: 50%">
+        statusthing
+      </div>
+      <div class="col" style="width: 25%">
+        <h5>Releases<h5>
+        <div>{{=it.releases}}</div>
+      </div>
+      <div class="col" style="width: 25%">
+        <h5>Last Update</h5>
+        <div>{{=it.last_update}}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="width: 30%">
+        <h5>Stars<h5>
+        <div>{{=it.stars}}</div>
+      </div>
+      <div class="col" style="width: 20%">
+        <h5>Network Repos<h5>
+        <div>{{=it.net_repos}}</div>
+      </div>
+      <div class="col" style="width: 25%">
+        <h5>Forks</h5>
+        <div>{{=it.forks}}</div>
+      </div>
+      <div class="col" style="width: 25%">
+        <h5>Branches</h5>
+        <div>{{=it.branches}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="qual row" style="height: 300px">
   </div>
 </script>
 
