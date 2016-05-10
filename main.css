@@ -1,0 +1,22 @@
+#report-widget-mount {
+  width: 800px;
+  height: 600px;
+  margin: 30px auto 0 auto;
+}
+
+/* DEBUG STYLES */
+.dblack {
+  border: 1px solid black;
+}
+
+.db{
+  border: 1px solid blue;
+}
+
+.dr {
+  border: 1px solid red;
+}
+
+.dg {
+  border: 1px solid green;
+}
